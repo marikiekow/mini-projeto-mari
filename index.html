@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniProjeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+        <div class="titulo">
+            <h1>Ficha de Personagem</h1>
+        </div>
+    
+    <div id="Ficha">
+
+        <div class="identificacao">
+    <div class="nome">
+        <input type="text" id="nome" placeholder="Nome">
+      
+    </div>
+
+    <select id="classe" name="classe">
+        <option value="guerreiro">Guerreiro</option>
+        <option value="mago">Mago</option>
+        <option value="ladino">Ladino</option>
+    </select>
+</div>
+    
+        <div class="pontos">
+    <p>Pontos: <span id="pontos">10</span></p>
+        </div>
+
+    <div class="habilidades">
+
+    <div class="habilidade">
+                <label>Força:</label>
+                <div class="controle">
+                    <button id="btn-forca-menos" type="button">-</button>
+                    <span id="v-forca">5</span>
+                    <button id="btn-forca-mais" type="button">+</button>
+                </div>
+            </div>
+
+            <div class="habilidade">
+                <label>Agilidade:</label>
+                <div class="controle">
+                    <button id="btn-agilidade-menos" type="button">-</button>
+                    <span id="v-agilidade">5</span>
+                    <button id="btn-agilidade-mais" type="button">+</button>
+                </div>
+            </div>
+
+            <div class="habilidade">
+                <label>Inteligência:</label>
+                <div class="controle">
+                    <button id="btn-inteligencia-menos" type="button">-</button>
+                    <span id="v-inteligencia">5</span>
+                    <button id="btn-inteligencia-mais" type="button">+</button>
+                </div>
+            </div>
+
+            <div class="habilidade">
+                <label>Resistência:</label>
+                <div class="controle">
+                    <button id="btn-resistencia-menos" type="button">-</button>
+                    <span id="v-resistencia">5</span>
+                    <button id="btn-resistencia-mais" type="button">+</button>
+                </div>
+            </div>
+
+            <div class="botoes">
+                <button class="aplicar-bonus" id="btn-bonus" type="button">
+                    Aplicar Bônus
+                </button>
+
+                <button class="salvar-fichas" id="btn-salvar" type="button">
+                    Salvar Ficha
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="fichas">
+    </div>
+    
+    <footer>© MariKiekow</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
